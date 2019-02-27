@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+	<title>TMC Main html </title>
+	<link rel="stylesheet" type="text/css" href="TMC_Main.css">
+	<script id="scripttag" type="text/javascript" src="TMC_Main.js"></script>
+</head>
+<body>
+	
+	<table border="1">
+	<tr>
+		<th></th>
+		<th>Upto Date</th>
+		<th>Create OK</th>
+		<th>Create KO</th>
+		<th>Update OK</th>
+		<th>Update KO</th>
+		<th>Delete OK</th>
+		<th>Delete KO</th>
+	</tr>
+	<tr>
+		<th>References</th>
+		
+	<!--	<td class="defaultModeGlobal clickable" onclick="Change_Document_By_id()" onmouseover=" this.className='highlightDefaultMode clickable' " onmouseout=" this.className= 'defaultModeGlobal clickable' " align="center" id="Ref_Uptodate">0
+		<!--	<input size="10" align="center" type="text" id="Ref_Uptodate" readonly="readonly"> -->
+		<td onclick="Message()">100
+		</td>
+		
+		<td>
+			<input size="10" align="center" type="text" id="Ref_Creatok" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Ref_Createko" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Ref_Updateok" readonly="readonly">
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Ref_Updateko" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Ref_Deleteok" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Ref_DeleteKO" >
+		</td>
+	</tr>
+	<tr>
+		<th>Instances</th>
+		<td>
+			<input size="10" align="center" type="text" id="Inst_Uptodate" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Inst_Creatok" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Inst_Createko" >
+		</td>
+		<td class="defaultModeGlobal clickable" onclick="Display_JSONContent()" onmouseover=" this.className='highlightDefaultMode clickable' " onmouseout=" this.className= 'defaultModeGlobal clickable' " align="center" id="Inst_Updateok">16147
+		<!--	<input size="10" align="center" type="text" id="Inst_Updateok" readonly="readonly"> -->
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Inst_Updateko" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Inst_Deleteok" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Inst_DeleteKO" >
+		</td>
+	</tr>
+	<tr>
+		<th>Representations</th>
+		<td>
+			<input size="10" align="center" type="text" id="Rep_Uptodate" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Rep_Creatok" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Rep_Createko" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Rep_Updateok" readonly="readonly">
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Rep_Updateko" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Rep_Deleteok" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Rep_DeleteKO" >
+		</td>
+	</tr>
+	<tr>
+		<th>RepInstances</th>
+		<td>
+			<input size="10" align="center" type="text" id="RepInst_Uptodate" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="RepInst_Creatok" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="RepInst_Createko" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="RepInst_Updateok" readonly="readonly" onclick="">
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="RepInst_Updateko" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="RepInst_Deleteok" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="RepInst_DeleteKO" >
+		</td>
+	</tr>
+	<tr>
+		<th>Ports</th>
+		<td>
+			<input size="10" align="center" type="text" id="Port_Uptodate" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Port_Creatok" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Port_Createko" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Port_Updateok" readonly="readonly">
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Port_Updateko" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Port_Deleteok" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Port_DeleteKO" >
+		</td>
+	</tr>
+	<tr>
+		<th>Connections</th>
+		<td>
+			<input size="10" align="center" type="text" id="Con_Uptodate" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Con_Creatok" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Con_Createko" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Con_Updateok" readonly="readonly">
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Con_Updateko" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Con_Deleteok" >
+		</td>
+		<td>
+			<input size="10" align="center" type="text" id="Con_DeleteKO" >
+		</td>
+	</tr>
+	
+	</table>
+	</body>
+</html>

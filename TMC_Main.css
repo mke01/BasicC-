@@ -1,0 +1,18 @@
+.highlightDefaultMode 
+{	
+	border-width: 1px;
+	border-style: solid;
+	border-color: darkblue;
+	background-color: #C0C0F0;
+}
+.defaultModeGlobal
+{	
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	background-color: #F8F9FD;
+}
+.clickable
+{
+	cursor: default;
+}
